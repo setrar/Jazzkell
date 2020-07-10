@@ -1,2 +1,12 @@
 
 .DS_Store
+
+# IntelliJ
+.idea/
+
+# Haskell
+cabal.project.local
+dist-newstyle/
+
+
+
