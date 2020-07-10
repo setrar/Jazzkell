@@ -1,8 +1,11 @@
 # Examples
 
+[A Functional Model of Jazz Improvisation](https://www.researchgate.net/publication/333967847_A_Functional_Model_of_Jazz_Improvisation)
 
+:star: Running the examples in `ghci`
 
-Testing without installing the Jazzkell Library
+## :a: without installing the `Jazzkell` Library
+
 
 ```
 Prelude> :l examples/Bebop.lhs 
@@ -27,9 +30,16 @@ examples/Bebop.lhs:18:3: error:
 Failed, three modules loaded.
 ```
 
+
+## :b: with installing the `Jazzkell` Library
+
+* Installing the library
+
 ```
 $ cabal install Jazzkell
 ```
+
+with `cabal` 3.x plus
 
 ```
 $ cabal v1-install Jazzkell
