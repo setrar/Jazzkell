@@ -6,9 +6,53 @@
 
 ## :a: without installing the `Jazzkell` Library
 
+You can only run 4 examples:
+
+- [ ] SimpleWalkingBass
+
+- [ ] Trading
+
+- [ ] SimpleBossa
+
+- [ ] Hypnotize
 
 ```
-Prelude> :l examples/Bebop.lhs 
+Prelude> :l examples/
+bebop.mid              WalkingBass.lhs        SimpleWalkingBass.lhs  Trading.lhs            bebop.mscz
+SimpleBossa.lhs        README.md              Bebop.lhs              Hypnotize.lhs
+Prelude> :l examples/SimpleWalkingBass.lhs 
+[1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
+[2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
+[3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
+[4 of 4] Compiling SimpleWalkingBass ( examples/SimpleWalkingBass.lhs, interpreted )
+Ok, four modules loaded.
+*SimpleWalkingBass> :l examples/Trading.lhs 
+[1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
+[2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
+[3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
+[4 of 4] Compiling Trading          ( examples/Trading.lhs, interpreted )
+Ok, four modules loaded.
+*Trading> :l examples/SimpleBossa.lhs 
+[1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
+[2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
+[3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
+[4 of 4] Compiling SimpleBossa      ( examples/SimpleBossa.lhs, interpreted )
+Ok, four modules loaded.
+*SimpleBossa> :l examples/Hypnotize.lhs 
+[1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
+[2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
+[3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
+[4 of 4] Compiling Hypnotize        ( examples/Hypnotize.lhs, interpreted )
+Ok, four modules loaded.
+*Hypnotize>     
+```
+
+```
+```
+
+
+```
+Prelude> :load examples/Bebop.lhs 
 [1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
 [2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
 [3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
