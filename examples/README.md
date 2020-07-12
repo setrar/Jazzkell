@@ -47,6 +47,12 @@ Ok, four modules loaded.
 *Hypnotize>     
 ```
 
+:bulb: To play the examples, just type the below in `ghci`:
+
+```
+Prelude> play m
+```
+
 :x: If you try to load the `Bebop` example, it will fail. You need to install the `Jazzkell` library first
 
 ```
