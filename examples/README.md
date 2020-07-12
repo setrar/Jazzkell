@@ -88,3 +88,9 @@ with `cabal` 3.x plus
 ```
 $ cabal v1-install Jazzkell
 ```
+
+## :ab: Uninstalling the `Jazzkell` Library
+
+```
+$ ghc-pkg unregister Jazzkell
+```
