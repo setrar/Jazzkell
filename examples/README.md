@@ -17,7 +17,7 @@ You can only run 4 examples:
 - [ ] Hypnotize
 
 ```
-Prelude> :l examples/
+Prelude> :load examples/
 bebop.mid              WalkingBass.lhs        SimpleWalkingBass.lhs  Trading.lhs            bebop.mscz
 SimpleBossa.lhs        README.md              Bebop.lhs              Hypnotize.lhs
 Prelude> :load examples/SimpleWalkingBass.lhs 
