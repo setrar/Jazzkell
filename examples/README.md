@@ -2,9 +2,9 @@
 
 [A Functional Model of Jazz Improvisation](https://www.researchgate.net/publication/333967847_A_Functional_Model_of_Jazz_Improvisation)
 
-:star: Running the examples in `ghci`
+## :star: Running the examples in `ghci`
 
-## :a: without installing the `Jazzkell` Library
+### :a: without installing the `Jazzkell` Library
 
 You can only run 4 examples:
 
@@ -79,7 +79,7 @@ Failed, three modules loaded.
 ```
 
 
-## :b: with installing the `Jazzkell` Library
+### :b: with installing the `Jazzkell` Library
 
 * Installing the library
 
