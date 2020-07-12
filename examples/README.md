@@ -20,7 +20,7 @@ You can only run 4 examples:
 Prelude> :l examples/
 bebop.mid              WalkingBass.lhs        SimpleWalkingBass.lhs  Trading.lhs            bebop.mscz
 SimpleBossa.lhs        README.md              Bebop.lhs              Hypnotize.lhs
-Prelude> :l examples/SimpleWalkingBass.lhs 
+Prelude> :load examples/SimpleWalkingBass.lhs 
 [1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
 [2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
 [3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
@@ -32,13 +32,13 @@ Ok, four modules loaded.
 [3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
 [4 of 4] Compiling Trading          ( examples/Trading.lhs, interpreted )
 Ok, four modules loaded.
-*Trading> :l examples/SimpleBossa.lhs 
+*Trading> :load examples/SimpleBossa.lhs 
 [1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
 [2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
 [3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
 [4 of 4] Compiling SimpleBossa      ( examples/SimpleBossa.lhs, interpreted )
 Ok, four modules loaded.
-*SimpleBossa> :l examples/Hypnotize.lhs 
+*SimpleBossa> :load examples/Hypnotize.lhs 
 [1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
 [2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
 [3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
@@ -47,9 +47,7 @@ Ok, four modules loaded.
 *Hypnotize>     
 ```
 
-```
-```
-
+:x: If you try to load the `Bebop` example, it will fail. You need to install the `Jazzkell` library first
 
 ```
 Prelude> :load examples/Bebop.lhs 
