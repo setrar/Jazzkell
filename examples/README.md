@@ -93,6 +93,27 @@ with `cabal` 3.x plus
 $ cabal v1-install Jazzkell
 ```
 
+* You can only run 2 more examples:
+
+- [ ] WalkingBass
+
+- [ ] Bebop
+
+:bulb: To play the examples:
+
+- [x] type the below in `ghci` to hear the generated sound:
+
+```
+Prelude> play m
+```
+
+- [x] type the below in `ghci` to write the midi file:
+
+```
+Prelude> main
+```
+
+
 ## :ab: Uninstalling the `Jazzkell` Library
 
 ```
