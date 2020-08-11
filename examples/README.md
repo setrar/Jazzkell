@@ -6,7 +6,7 @@
 
 ### :a: without installing the `Jazzkell` Library
 
-You can only run 4 examples:
+You can run 4 individual examples by loading them using their filenames
 
 - [ ] SimpleWalkingBass
 
@@ -53,7 +53,7 @@ Ok, four modules loaded.
 Prelude> play m
 ```
 
-:x: If you try to load the `Bebop` example, it will fail. You need to install the `Jazzkell` library first
+:x: When trying to load the `Bebop` example, it will fail. 
 
 ```
 Prelude> :load examples/Bebop.lhs 
@@ -76,6 +76,12 @@ examples/Bebop.lhs:18:3: error:
 18 | > import qualified SimpleBossa as SB
    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Failed, three modules loaded.
+```
+
+:o: You need to load other file along with the `Bebop` program
+
+```
+Prelude> :load examples/Bebop.lhs examples/SimpleBossa.lhs examples/SimpleWalkingBass.lhs
 ```
 
 
