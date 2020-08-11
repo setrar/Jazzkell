@@ -2,9 +2,9 @@
 
 [A Functional Model of Jazz Improvisation](https://www.researchgate.net/publication/333967847_A_Functional_Model_of_Jazz_Improvisation)
 
-:star: Running the examples in `ghci`
+## :star: Running the examples in `ghci`
 
-## :a: without installing the `Jazzkell` Library
+### :a: without installing the `Jazzkell` Library
 
 You can only run 4 examples:
 
@@ -17,7 +17,7 @@ You can only run 4 examples:
 - [ ] Hypnotize
 
 ```
-Prelude> :l examples/
+Prelude> :load examples/
 bebop.mid              WalkingBass.lhs        SimpleWalkingBass.lhs  Trading.lhs            bebop.mscz
 SimpleBossa.lhs        README.md              Bebop.lhs              Hypnotize.lhs
 Prelude> :load examples/SimpleWalkingBass.lhs 
@@ -79,7 +79,7 @@ Failed, three modules loaded.
 ```
 
 
-## :b: with installing the `Jazzkell` Library
+### :b: with installing the `Jazzkell` Library
 
 * Installing the library
 
@@ -92,6 +92,27 @@ with `cabal` 3.x plus
 ```
 $ cabal v1-install Jazzkell
 ```
+
+* You can only run 2 more examples:
+
+- [ ] WalkingBass
+
+- [ ] Bebop
+
+:bulb: To play the examples:
+
+- [x] type the below in `ghci` to hear the generated sound:
+
+```
+Prelude> play m
+```
+
+- [x] type the below in `ghci` to write the midi file:
+
+```
+Prelude> main
+```
+
 
 ## :ab: Uninstalling the `Jazzkell` Library
 
