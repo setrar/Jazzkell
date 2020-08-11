@@ -118,3 +118,5 @@ Finally, we'll test it on a lead sheet.
 > ls = [seg1, seg2, seg3, seg4, seg5, seg6, seg7, seg8, seg9, seg10, seg11]
 
 > m = runBand myJB [] ls (mkStdGen 6)
+
+> main = writeMidi "SimpleBossa.mid" $ cut 30 m

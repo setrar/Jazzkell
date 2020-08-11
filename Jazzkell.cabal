@@ -28,4 +28,6 @@ Library
         Jazzkell.Utils
   other-modules:
   build-depends:
-        base >= 3 && < 5, Euterpea >= 2.0.6, random>=1.1 && <2.0
+        base >= 3 && < 5, Euterpea >= 2.0.6, random>=1.1 && <2.0, deepseq>=1.4.0
+  if impl(ghc >= 6.12)
+    ghc-options:     -fno-warn-unused-do-bind

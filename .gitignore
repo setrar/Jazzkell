@@ -5,8 +5,8 @@
 .idea/
 
 # Haskell
-cabal.project.local
-dist-newstyle/
+cabal.project.local*
+dist*
 
 
 

@@ -83,7 +83,7 @@ Now we put the two together as a jazz band.
 
 > myJB :: JazzBand AbsPitch WalkingState
 > myJB = [JazzPart Bass AcousticBass wBassFun NullState, 
->         JazzPart Bass ElectricGrandPiano chordFun NullState] 
+>         JazzPart Bass AcousticGrandPiano chordFun NullState] 
 
 Finally, we'll test it on a simple lead sheet.
      
@@ -99,3 +99,5 @@ Finally, we'll test it on a simple lead sheet.
 > ls = concat $ repeat [seg1, seg2, seg3, seg4]
 
 > m = runBand myJB [] ls (mkStdGen 5)
+
+> main = writeMidi "SimpleWalkingBass.mid" $ cut 24 m
