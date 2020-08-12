@@ -1,6 +1,5 @@
 # Examples
 
-[A Functional Model of Jazz Improvisation](https://www.researchgate.net/publication/333967847_A_Functional_Model_of_Jazz_Improvisation)
 
 ## :star: Running the examples in `ghci`
 
