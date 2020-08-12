@@ -3,7 +3,7 @@
 
 ## :star: Running the examples in `ghci`
 
-### :b: Running while using the `Jazzkell` Source Code
+### :a: Running while using the `Jazzkell` Source Code
 
 :bulb: Make sure you run `ghci` from the project root directory
 
