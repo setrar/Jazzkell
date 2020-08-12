@@ -101,7 +101,7 @@ Note: The program to be played needs to be loaded prior loading dependency files
 $ cd examples
 ```
 
-* Execute `ghci` and load the `Bebop` program
+:x: Execute `ghci` and load the `Bebop` program
 
 ```
 $ ghci
@@ -127,7 +127,7 @@ Failed, no modules loaded.
 
 :bookmark: if you get a `Could not find module` error that means that `Jazzkell` library needs to be installed from Hackage 
 
-* Installing the library
+:o: Installing the library
 
 ```
 $ cabal install Jazzkell
@@ -139,7 +139,7 @@ with `cabal` 3.x plus
 $ cabal v1-install Jazzkell
 ```
 
-* load the examples:
+:tada: load the examples:
 
 ```
 Prelude> :load Bebop.lhs 
