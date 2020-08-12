@@ -125,3 +125,21 @@ Prelude> main
 ```
 $ ghc-pkg unregister Jazzkell
 ```
+
+## Euterpea
+
+```
+Prelude> import Euterpea
+```
+
+```
+*Jazzkell Euterpea> devices
+
+Input devices: 
+
+Output devices: 
+  OutputDeviceID 0	SimpleSynth virtual input
+```
+# References
+
+https://www.youtube.com/watch?v=Da7qwYADeds
