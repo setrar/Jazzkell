@@ -157,6 +157,8 @@ Prelude> :load Bebop.lhs
 
 - [ ] Bebop
 
+Note: You do not need to load the dependant programs, they will be loaded accordingly
+
 :bulb: To play the examples:
 
 - [x] type the below in `ghci` to hear the generated sound:
