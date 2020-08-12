@@ -79,7 +79,7 @@ examples/Bebop.lhs:18:3: error:
 Failed, three modules loaded.
 ```
 
-:o: You need to load other file along with the `Bebop` program
+:o: You need to load other files along with the `Bebop` program
 
 ```
 Prelude> :load examples/Bebop.lhs examples/SimpleBossa.lhs examples/SimpleWalkingBass.lhs
