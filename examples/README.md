@@ -5,7 +5,7 @@
 
 ### :a: Running while using the `Jazzkell` Source Code
 
-:bulb: Make sure you run `ghci` from the project root directory
+:bulb: Make sure you run `ghci` from the project root directory where the file `Jazzkell.lhs` is located
 
 You can run 4 individual examples by loading them using their filenames in `ghci`
 
