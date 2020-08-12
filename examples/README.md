@@ -127,6 +127,13 @@ $ ghc-pkg unregister Jazzkell
 
 ## Euterpea
 
+Install ghci version 8.6.5 see [Installation](http://www.euterpea.com/download-and-installation/) for details
+
+```
+% ghci
+GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
+```
+
 ```
 Prelude> import Euterpea
 ```
