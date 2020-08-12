@@ -123,6 +123,18 @@ Prelude> main
 
 ## :ab: Uninstalling the `Jazzkell` Library
 
+* Check that `Jazzkell` Library is installed
+
+```
+$ ghc-pkg list Jazzkell
+/Users/valiha/.ghcup/ghc/8.6.5/lib/ghc-8.6.5/package.conf.d
+    (no packages)
+/Users/valiha/.ghc/x86_64-darwin-8.6.5/package.conf.d
+    Jazzkell-0.0.1
+```
+
+* Uninstall `Jazzkell` Library with `ghc-pkg` tool
+
 ```
 $ ghc-pkg unregister Jazzkell
 ```
