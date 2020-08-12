@@ -85,6 +85,7 @@ Failed, three modules loaded.
 Prelude> :load examples/Bebop.lhs examples/SimpleBossa.lhs examples/SimpleWalkingBass.lhs
 ```
 
+Note: The program to be played needs to be loaded prior loading dependency files.
 
 ### :b: Running while installing the `Jazzkell` Library from Hackage 
 
