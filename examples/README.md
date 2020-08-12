@@ -3,9 +3,7 @@
 
 ## :star: Running the examples in `ghci`
 
-### :a: without installing the `Jazzkell` Library
-
-You can run 4 individual examples by loading them using their filenames
+You can run 4 individual examples by loading them using their filenames in `ghci`
 
 - [ ] SimpleWalkingBass
 
@@ -84,7 +82,7 @@ Prelude> :load examples/Bebop.lhs examples/SimpleBossa.lhs examples/SimpleWalkin
 ```
 
 
-### :b: with installing the `Jazzkell` Library
+### :b: Installing the `Jazzkell` Library from Hackage 
 
 * Installing the library
 
