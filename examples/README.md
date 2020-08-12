@@ -95,6 +95,12 @@ Note: The program to be played needs to be loaded prior loading dependency files
 
 ### :b: Running while installing the `Jazzkell` Library from Hackage 
 
+* go to the `examples` folder
+
+```
+$ cd examples
+```
+
 * Installing the library
 
 ```
@@ -107,7 +113,19 @@ with `cabal` 3.x plus
 $ cabal v1-install Jazzkell
 ```
 
-* You can only run 2 more examples:
+* load the examples:
+
+```
+Prelude> :load Bebop.lhs 
+```
+
+- [ ] SimpleWalkingBass
+
+- [ ] Trading
+
+- [ ] SimpleBossa
+
+- [ ] Hypnotize
 
 - [ ] WalkingBass
 
