@@ -101,6 +101,32 @@ Note: The program to be played needs to be loaded prior loading dependency files
 $ cd examples
 ```
 
+* Execute `ghci` and load the `Bebop` program
+
+```
+$ ghci
+GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
+Prelude> :load Bebop.lhs 
+[1 of 3] Compiling SimpleBossa      ( SimpleBossa.lhs, interpreted )
+
+SimpleBossa.lhs:14:3: error:
+    Could not find module ‘Jazzkell’
+    Use -v to see a list of the files searched for.
+   |
+14 | > import Jazzkell
+   |   ^^^^^^^^^^^^^^^
+
+SimpleBossa.lhs:15:3: error:
+    Could not find module ‘Jazzkell.Utils’
+    Use -v to see a list of the files searched for.
+   |
+15 | > import Jazzkell.Utils
+   |   ^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+```
+
+:bookmark: if you get a `Could not find module` error that means that `Jazzkell` library needs to be installed from Hackage 
+
 * Installing the library
 
 ```
