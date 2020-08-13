@@ -69,3 +69,5 @@ Now we can put both into a band.
 >         JazzPart Harmony ElectricGrandPiano chordFun2 NullState] 
 
 > m = runBand myJB [] ls (mkStdGen 500)
+
+> main = writeMidi "examples/docs/WalkingBass.mid" $ cut 24 m
