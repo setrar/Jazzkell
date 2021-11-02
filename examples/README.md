@@ -213,6 +213,21 @@ Input devices:
 Output devices: 
   OutputDeviceID 0	SimpleSynth virtual input
 ```
+
+
+```
+*Jazzkell> import Euterpea
+*Jazzkell Euterpea> devices
+
+Input devices: 
+
+Output devices: 
+  OutputDeviceID 0	sforzando
+
+*Jazzkell Euterpea> play $ line [c 4 qn, c 4 qn, g 4 qn, g 4 qn, a 4 qn, a 4 qn, g 4 hn]
+```
+
+
 # References
 
 https://www.youtube.com/watch?v=Da7qwYADeds
