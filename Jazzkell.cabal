@@ -6,7 +6,7 @@ license-file:	LICENSE
 copyright:      Copyright (c) 2019 Donya Quick
 category:       Music
 stability:      experimental
-build-type:     Custom
+build-type:     Simple
 author:         Donya Quick <donyaquick@gmail.com>
 maintainer:     Donya Quick <donyaquick@gmail.com>
 bug-reports:    https://github.com/donya/Jazzkell/issues
@@ -28,6 +28,6 @@ Library
         Jazzkell.Utils
   other-modules:
   build-depends:
-        base >= 3 && < 5, Euterpea >= 2.0.6, random>=1.1 && <2.0, deepseq>=1.4.0
+        base >= 3 && < 5, Euterpea >= 2.0.8, random>=1.1 && <2.0, deepseq>=1.4.0
   if impl(ghc >= 6.12)
     ghc-options:     -fno-warn-unused-do-bind
