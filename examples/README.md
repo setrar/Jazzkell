@@ -2,7 +2,7 @@
 
 ## :gear: Setup
 
-[Setup](SETUP.md)
+MIDI [Setup](SETUP.md)
 
 
 ## :star: Running the examples in `ghci`
