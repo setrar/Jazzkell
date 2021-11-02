@@ -1,5 +1,9 @@
 # Examples
 
+## :gear: Setup
+
+[Setup](SETUP.md)
+
 
 ## :star: Running the examples in `ghci`
 
