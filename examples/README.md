@@ -192,42 +192,6 @@ $ ghc-pkg list Jazzkell
 $ ghc-pkg unregister Jazzkell
 ```
 
-## Euterpea
-
-Install ghci version 8.6.5 see [Installation](http://www.euterpea.com/download-and-installation/) for details
-
-```
-% ghci
-GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
-```
-
-```
-Prelude> import Euterpea
-```
-
-```
-*Jazzkell Euterpea> devices
-
-Input devices: 
-
-Output devices: 
-  OutputDeviceID 0	SimpleSynth virtual input
-```
-
-
-```
-*Jazzkell> import Euterpea
-*Jazzkell Euterpea> devices
-
-Input devices: 
-
-Output devices: 
-  OutputDeviceID 0	sforzando
-
-*Jazzkell Euterpea> play $ line [c 4 qn, c 4 qn, g 4 qn, g 4 qn, a 4 qn, a 4 qn, g 4 hn]
-```
-
-
 # References
 
 https://www.youtube.com/watch?v=Da7qwYADeds
