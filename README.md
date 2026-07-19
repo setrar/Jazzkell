@@ -15,4 +15,7 @@ or
 ghci -package Euterpea -package mtl -package random examples/SimpleBossa.lhs
 ```
 
+```bash
+ghci -package Euterpea -package mtl -package random -iexamples examples/Bebop.lhs
+```
 

@@ -167,7 +167,7 @@ a certain level.
 
 > myJB :: JazzBand (AbsPitch, Volume) BebopState
 > myJB = [JazzPart Drums Percussion bebopDrumsFun defState, 
->         JazzPart Bass AcousticBass wBassFunV defState,
+>         JazzPart Bass FretlessBass wBassFunV defState,
 >         JazzPart Bass ElectricGrandPiano chordFunV defState,
 >         JazzPart Bass Marimba soloFunV defState] 
 
