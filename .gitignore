@@ -8,5 +8,8 @@
 cabal.project.local*
 dist*
 
+# Midi
+
+*.mid
 
 

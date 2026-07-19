@@ -82,7 +82,7 @@ bassline (just so we can hear some chords):
 Now we put the two together as a jazz band.
 
 > myJB :: JazzBand AbsPitch WalkingState
-> myJB = [JazzPart Bass AcousticBass wBassFun NullState, 
+> myJB = [JazzPart Bass FretlessBass wBassFun NullState, 
 >         JazzPart Bass AcousticGrandPiano chordFun NullState] 
 
 Finally, we'll test it on a simple lead sheet.

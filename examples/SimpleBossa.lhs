@@ -84,7 +84,7 @@ boundaries.
 Putting it all together:
 
 > myJB :: JazzBand AbsPitch SimpleState
-> myJB = [JazzPart Bass AcousticBass bassFun NullState, 
+> myJB = [JazzPart Bass FretlessBass bassFun NullState, 
 >         JazzPart Bass ElectricGrandPiano chordFun NullState, 
 >         JazzPart Bass Marimba soloFun (LastPitch 70)] 
 
