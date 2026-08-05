@@ -40,6 +40,8 @@ ghci> playDev 7 m
 ghci -package Euterpea -package mtl -package random -iexamples examples/Bebop.lhs
 ```
 
+> -i<dir>         Search for imported modules in the directory <dir>.
+
 # 📚 References
 
 - [ ] [Pattern Based Algorithmic Music Youtube: Donya Quick](https://www.youtube.com/watch?v=UVcXNhgVr9o)
