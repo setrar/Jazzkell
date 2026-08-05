@@ -159,7 +159,9 @@ a certain level.
 >         lastP = last ps
 >         s' = s{lastSoloPitch = lastP}
 >     in  case seg2 of 
->             Nothing -> (gs !! 2, s', note (segDur seg1 / 4) (head ps, 100))
+>             Nothing -> case ps of
+>                          (p:_) -> (gs !! 2, s', note (segDur seg1 / 4) (p, 100))
+>                          []    -> error "Bebop: empty pitch candidates"
 >             Just _ -> (gs !! 2, s', cut (segDur seg1 / 4) mel)
 
 
@@ -202,4 +204,4 @@ Random lead sheet of major/minor 7th chords:
 >     fsty f (pt, FixedPitch fp) = (pt, FixedPitch fp)
 
 > splitN :: StdGen -> [StdGen]
-> splitN g = let (g1, g2) = split g in g1 : splitN g2
+> splitN g = let (g1, g2) = splitGen g in g1 : splitN g2

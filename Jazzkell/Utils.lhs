@@ -24,7 +24,9 @@
 
 > nearest :: PitchSpace -> AbsPitch -> AbsPitch
 > nearest [] p = error "(nearest) empty pitch space."
-> nearest ps p = head $ orderByNearest ps p
+> nearest ps p = case orderByNearest ps p of
+>   (x:_) -> x
+>   []    -> error "nearest: empty list provided"
 
 > pitches :: Music a -> [a]
 > pitches = mFold pFun (++) (++) (\c l -> l) where
@@ -38,14 +40,14 @@
 
 
 > infSplit :: StdGen -> [StdGen] -- necessary to get many generators from just one
-> infSplit g = let (g1, g2) = split g in g1 : infSplit g2
+> infSplit g = let (g1, g2) = splitGen g in g1 : infSplit g2
 
 choose: select uniformly at random from a list
 
 > choose :: StdGen -> [a] -> (StdGen, a) 
 > choose g [] = error "Nothing to choose from!"
 > choose g xs = 
->     let (r, g') = next g
+>     let (r, g') = randomR (minBound :: Int, maxBound :: Int) g
 >     in  (g', xs !! (r `mod` length xs))
 
 > chooseN :: StdGen -> Int -> [a] -> (StdGen, [a])

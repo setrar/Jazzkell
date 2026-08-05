@@ -90,7 +90,9 @@ may potentially be infinite!
 > runBand [] h segs g = rest 0 -- no band to play!
 > runBand jb h [] g = rest 0
 > runBand jb h (seg1:segs) g =
->     let seg2 = if null segs then Nothing else Just (head segs)
+>     let seg2 = case segs of
+>                  (s:_) -> Just s
+>                  []    -> Nothing
 >         result = runSegment jb h seg1 seg2 g
 >         (gs, states, ms) = unzip3 result
 >         jb' = zipWith (\st jp -> jp{state=st}) states jb

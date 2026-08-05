@@ -34,7 +34,10 @@ Simple walking bass pattern following the bossa nova rhythm:
 
 > bassFun :: PartFun AbsPitch s
 > bassFun s seg1 seg2 hist g = 
->     let p1 = 36 + (head $ scale $ chordCtxt seg1)
+>     let rootPC = case scale (chordCtxt seg1) of
+>                    (x:_) -> x
+>                    []    -> 0
+>         p1 = 36 + rootPC
 >         p2 = p1 + 7 
 >         mPat = note dqn p1 :+: note en p2 :+: note dqn p2 :+: note en p1
 >         m = trimTo seg1 (forever mPat)
@@ -67,12 +70,14 @@ boundaries.
 > soloFun (LastPitch lp) seg1 seg2 hist g0 = 
 >     let sPSpace = filterByScale (scale $ chordCtxt seg1) soloPSpace
 >         n = round (2*segDur seg1) 
->         (g1, g2) = split g0
+>         (g1, g2) = splitGen g0
 >         ps = take n $ randMelody g0 sPSpace lp 
 >         mel = line $ map (note en) ps
 >         lastP = last $ pitches mel
 >     in  case seg2 of 
->             Nothing -> (g2, LastPitch (head ps), note (segDur seg1) (head ps))
+>             Nothing -> case ps of
+>                          (p:_) -> (g2, LastPitch p, note (segDur seg1) p)
+>                          []    -> error "SimpleBossa: empty pitch candidates"
 >             Just _ -> (g2, LastPitch (last ps), mel)
 
 > randMelody :: StdGen -> [AbsPitch] -> AbsPitch -> [AbsPitch]
