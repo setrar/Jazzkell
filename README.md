@@ -64,9 +64,8 @@ Ok, six modules loaded.
 ```text
 ghci> playDev 7 m
 ```
-> Pt_Start() called
-> 
-> ^CInterrupted.
+  Pt_Start() called
+  ^CInterrupted.
 
 
 # 📚 References
