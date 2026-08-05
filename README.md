@@ -40,7 +40,7 @@ ghci> playDev 7 m
 ghci -package Euterpea -package mtl -package random -iexamples examples/Bebop.lhs
 ```
 
-> -i<dir>         Search for imported modules in the directory <dir>.
+> -i\<dir\>         Search for imported modules in the directory \<dir\>.
 
 # 📚 References
 
