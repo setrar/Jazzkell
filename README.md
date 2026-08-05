@@ -42,7 +42,7 @@ Pt_Start() called
 > -i\<dir\>         Search for imported modules in the directory \<dir\>.
 
 ```bash
-ghci -package Euterpea -package mtl -package random -iexamples examples/Bebop.lhs
+ghci -package Euterpea -package random -iexamples examples/Bebop.lhs
 ```
 <details>
 <summary>:wood: Log</summary>
