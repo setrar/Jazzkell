@@ -1,7 +1,7 @@
 # [Pattern Based Algorithmic Music Youtube: Donya Quick](https://www.youtube.com/watch?v=UVcXNhgVr9o)
 
 
-## [Random Numbers to Music](https://youtu.be/UVcXNhgVr9o?t=226s)
+## :one: [Random Numbers to Music](https://youtu.be/UVcXNhgVr9o?t=226s)
 
 ```bash
 ghci ghci -package Euterpea -package random
@@ -32,7 +32,7 @@ Pt_Start() called
 ^CInterrupted.
 ```
 
-## [Generation with 1 Pattern](https://youtu.be/UVcXNhgVr9o?t=632)
+## 2️⃣ [Generation with 1 Pattern](https://youtu.be/UVcXNhgVr9o?t=632)
 
 ```bash
 ghci ghci -package Euterpea -package random
@@ -64,7 +64,7 @@ Pt_Start() called
 ^CInterrupted.
 ```
 
-## [Changing Scales](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=226s)
+## 3️⃣ [Changing Scales](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=226s)
 
 ```bash
 ghci ghci -package Euterpea -package random
@@ -97,7 +97,7 @@ Pt_Start() called
 ^CInterrupted.
 ```
 
-## [2-Part Composition](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=862s)
+## 4️⃣ [2-Part Composition](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=862s)
 
 ```bash
 ghci ghci -package Euterpea -package random
@@ -142,7 +142,7 @@ The difference lies in how candidate pattern instances are selected after spatia
 | **Fallback Strategy** | Reverts to `pS` if `piNear` is empty. | Reverts to `candidates` if removing duplicates leaves `freshCandidates` empty. |
 | **Musical Effect** | Tends to stall on static pitch anchors or repeat identical figures. | Keeps melodic motion active by forcing new transpositions where possible. |
 
-## [Changing Scales Again](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=1017s)
+## 5️⃣ [Changing Scales Again](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=1017s)
 
 ```bash
 ghci ghci -package Euterpea -package random
