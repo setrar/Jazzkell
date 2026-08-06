@@ -133,6 +133,8 @@ Pt_Start() called
 
 ---
 
+### 🪗 Difference between `pGen2` and `pGen`
+
 The difference lies in how candidate pattern instances are selected after spatial filtering (`nearby`): **`pGen2` adds a duplicate-prevention step to avoid pitch stagnation.**
 
 | Feature | `pGen` | `pGen2` |
@@ -169,7 +171,7 @@ ghci> :l 5.ChangingScalesAgain.lhs 4.2-PartComposition.lhs 3.ChangingScales.lhs 
 Ok, five modules loaded.
 ```
 
-- Minor
+- C-minor Scale
 
 ```
 ghci> playDev 7 m5
@@ -179,7 +181,7 @@ Pt_Start() called
 ^CInterrupted.
 ```
 
-- Pentatonic
+- C-major Pentatonic Scale
 
 ```
 ghci> playDev 7 m6
