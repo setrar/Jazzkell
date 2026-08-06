@@ -63,3 +63,36 @@ ghci> playDev 7 m1
 Pt_Start() called
 ^CInterrupted.
 ```
+
+## [Changing Scales](https://www.youtube.com/watch?v=UVcXNhgVr9o&t=226s)
+
+```bash
+ghci ghci -package Euterpea -package random
+```
+<details>
+<summary>:wood: Log</summary>
+
+```lua
+Loaded package environment from /Users/valiha/.ghc/aarch64-darwin-9.12.4/environments/default
+GHCi, version 9.12.4: https://www.haskell.org/ghc/  :? for help
+```
+
+</details>
+
+```text
+ghci> :l  ChangingScales.lhs
+```
+```lua
+[1 of 3] Compiling PatternGen       ( PatternGen.lhs, interpreted )
+[2 of 3] Compiling Gen2             ( Gen2.lhs, interpreted )
+[3 of 3] Compiling ChangingScales   ( ChangingScales.lhs, interpreted )
+Ok, three modules loaded.
+```
+
+```
+ghci> playDev 7 m1b
+```
+```
+Pt_Start() called
+^CInterrupted.
+```

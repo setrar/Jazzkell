@@ -1,5 +1,7 @@
 Define the main entry module and import dependencies:
 
+> module Gen2 where
+
 > import Euterpea
 > import System.Random
 > import PatternGen -- (code from last slides)
