@@ -1,7 +1,7 @@
 # Jazzkell
 
 
-## Random Numbers to Music
+## [Random Numbers to Music](https://youtu.be/UVcXNhgVr9o?t=226)
 
 ```bash
 ghci ghci -package Euterpea -package random
