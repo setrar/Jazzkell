@@ -1,18 +1,10 @@
 # Jazzkell
 
 
-This project uses a local project by using the `cabal.project` file
-
-To use the local project in `ghci`:
-
-```
-cabal repl
-```
-
-or 
+## Random Numbers to Music
 
 ```bash
-ghci -package Euterpea -package mtl -package random examples/SimpleBossa.lhs
+ghci ghci -package Euterpea -package random
 ```
 <details>
 <summary>:wood: Log</summary>
@@ -20,24 +12,24 @@ ghci -package Euterpea -package mtl -package random examples/SimpleBossa.lhs
 ```lua
 Loaded package environment from /Users/valiha/.ghc/aarch64-darwin-9.12.4/environments/default
 GHCi, version 9.12.4: https://www.haskell.org/ghc/  :? for help
-[1 of 4] Compiling Jazzkell.JazzTypes ( Jazzkell/JazzTypes.lhs, interpreted )
-[2 of 4] Compiling Jazzkell         ( Jazzkell.lhs, interpreted )
-[3 of 4] Compiling Jazzkell.Utils   ( Jazzkell/Utils.lhs, interpreted )
-[4 of 4] Compiling SimpleBossa      ( examples/SimpleBossa.lhs, interpreted )
-Ok, four modules loaded.
 ```
 
 </details>
 
 ```text
+ghci> :l Gen
+```
+```lua
+[1 of 2] Compiling Main             ( Gen.lhs, interpreted )
+Ok, one module loaded.
+```
+
+```
 ghci> playDev 7 m
 ```
-> Pt_Start() called
-> 
-> ^CInterrupted.
-
-```bash
-ghci -package Euterpea -package mtl -package random -iexamples examples/Bebop.lhs
+```
+Pt_Start() called
+^CInterrupted.
 ```
 
 # 📚 References
