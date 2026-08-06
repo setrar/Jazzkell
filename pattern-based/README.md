@@ -48,7 +48,7 @@ GHCi, version 9.12.4: https://www.haskell.org/ghc/  :? for help
 </details>
 
 ```text
-ghci> :l Gen2.lhs
+ghci> :l Gen2
 ```
 ```lua
 [1 of 3] Compiling PatternGen       ( PatternGen.lhs, interpreted )
@@ -57,14 +57,9 @@ Ok, two modules loaded.
 ```
 
 ```
-ghci> playDev 7 m
+ghci> playDev 7 m1
 ```
 ```
 Pt_Start() called
 ^CInterrupted.
 ```
-
-
-# 📚 References
-
-- [ ] 

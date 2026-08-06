@@ -1,3 +1,5 @@
+Declare the module header and import dependencies:
+
 > module PatternGen where
 > import Euterpea
 > import System.Random
@@ -16,12 +18,15 @@ Find all instances of pattern p in pitch space s:
 > type PatternInst = [AbsPitch]
 > type DistThresh = AbsPitch
 
+Locate valid transpositions of a pattern within a pitch space:
+
 > findInsts :: PitchSpace -> Pattern -> [PatternInst]
 > findInsts s p = -- find all instances of pattern p in pitch space s
 >   let patInsts = map (\a -> map (+a) p) s
 >   in filter (and . map (`elem` s)) patInsts
 
-Generate patterns sequentially:
+Recursively construct an infinite stream of patterned pitches:
+(Generate patterns sequentially)
 
 > pGen :: PitchSpace -> [Pattern] -> AbsPitch -> DistThresh -> StdGen -> [AbsPitch]
 > pGen s k x d g0 =
