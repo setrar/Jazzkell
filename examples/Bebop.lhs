@@ -35,7 +35,7 @@ First, some constants:
 > k = 36 :: AbsPitch -- kick
 > kv = 80 :: Volume -- kick volume
 > s = 40 :: AbsPitch -- snare
-> sv = 25 :: Volume -- snare volume
+> sv = 30 :: Volume -- snare volume
 > crash = 49 :: AbsPitch -- cymbal crash
 
 The following functions are from an older implementation that created
@@ -147,7 +147,7 @@ so rather than lifting it as above we'll redefine it. Here, we
 use stochastic volumes and create a rest if a volume is below 
 a certain level.
 
-> soloPSpace = [80..100]
+> soloPSpace = [70..84]
 
 > soloFunV :: PartFun (AbsPitch, Volume) BebopState
 > soloFunV s seg1 seg2 hist g0 = 
@@ -173,10 +173,12 @@ a certain level.
 ====== Jazz Band Definition ======
 
 > myJB :: JazzBand (AbsPitch, Volume) BebopState
-> myJB = [JazzPart Drums Percussion bebopDrumsFun defState, 
->         JazzPart Bass FretlessBass wBassFunV defState,
->         JazzPart Bass ElectricGrandPiano chordFunV defState,
->         JazzPart Bass Marimba soloFunV defState] 
+> myJB = [
+>           JazzPart Drums Percussion bebopDrumsFun defState
+>         , JazzPart Bass FretlessBass wBassFunV defState
+>         , JazzPart Bass ElectricGrandPiano chordFunV defState
+>         , JazzPart Bass Marimba soloFunV defState
+>  ] 
 
 Random lead sheet of major/minor 7th chords:
 
@@ -187,7 +189,7 @@ Random lead sheet of major/minor 7th chords:
 >         scale = map ((`mod` 12).(+root)) $ 
 >                 if mode=="M" then [0,2,4,5,7,9,11] else [0,2,3,5,7,8,10]
 >         pcStr = ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"] !! root
->         chordStr = pcStr ++ mode ++ "7"
+>         chordStr = pcStr ++ mode ++ "6"
 >         ctxt = ChordCtxt chordStr scale
 >     in  Segment ctxt Regular [] (m,b) 4 (TimeSig 4 4) : randomLeadSheet g2 (m+1, b)
 
