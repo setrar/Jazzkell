@@ -33,9 +33,9 @@ First, some constants:
 > hh = 46 :: AbsPitch -- open hi hat
 > hc = 44 :: AbsPitch -- close hi hat
 > k = 36 :: AbsPitch -- kick
-> kv = 100 :: Volume -- kick volume
+> kv = 80 :: Volume -- kick volume
 > s = 40 :: AbsPitch -- snare
-> sv = 85 :: Volume -- snare volume
+> sv = 25 :: Volume -- snare volume
 > crash = 49 :: AbsPitch -- cymbal crash
 
 The following functions are from an older implementation that created
@@ -49,8 +49,13 @@ the Music (AbsPitch, Volume) type.
 > genHiHats :: StdGen -> Music (AbsPitch, Volume)
 > genHiHats g =  
 >     let (v, g1) = randomR (0,100) g
->         (g2, x) = choose g1 [note en (hh,v), note en (hh,v), note en (hh,v), note en (hc,v)] 
->                              -- note (2*en/3) (hh,v) :+: note (en/3) (hh,v) -- include this option if you want syncopation
+>         (g2, x) = choose g1 [
+>                         note en (hh,v)
+>                       , note en (hh,v)
+>                       , note en (hh,v)
+>                       , note en (hc,v)
+>                       , note (2*en/3) (hh,v) :+: note (en/3) (hh,v) -- include this option if you want syncopation
+>                   ]
 >     in  (if v<30 then rest en else x) :+: genHiHats g2
 
 > genSnare :: StdGen -> Music (AbsPitch, Volume)
@@ -142,7 +147,7 @@ so rather than lifting it as above we'll redefine it. Here, we
 use stochastic volumes and create a rest if a volume is below 
 a certain level.
 
-> soloPSpace = [70..84]
+> soloPSpace = [80..100]
 
 > soloFunV :: PartFun (AbsPitch, Volume) BebopState
 > soloFunV s seg1 seg2 hist g0 = 

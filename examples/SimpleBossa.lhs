@@ -90,7 +90,7 @@ Putting it all together:
 
 > myJB :: JazzBand AbsPitch SimpleState
 > myJB = [JazzPart Bass FretlessBass bassFun NullState, 
->         JazzPart Bass ElectricGrandPiano chordFun NullState, 
+>         JazzPart Bass RhodesPiano chordFun NullState, 
 >         JazzPart Bass Marimba soloFun (LastPitch 70)] 
 
 Finally, we'll test it on a lead sheet.
