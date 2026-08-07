@@ -44,3 +44,24 @@ All together:
 
 > m4 = instrument PizzicatoStrings m3o :=:
 >      instrument Marimba m2
+
+> -- | Generates the combined arrangement (m4) using a dynamic seed integer
+> makePiece :: Int -> Music AbsPitch
+> makePiece seed = instrument PizzicatoStrings m3o :=: instrument Marimba m2
+>   where
+>     -- Marimba part (Treble)
+>     k2    = [[0,3], [0,5], [0,-2]]
+>     s2    = scaleToPSpace (50,80) [0,2,4,5,7,9,11]
+>     d2    = 7
+>     x2    = 60
+>     nums2 = pGen2 s2 k2 x2 d2 (mkStdGen seed)        -- Main seed passed here
+>     m2    = line $ map (note sn) nums2
+> 
+>     -- Plucked string part (Bass)
+>     k3    = [[0,7], [0,4], [0,12]]
+>     s3    = scaleToPSpace (30,50) [0,4,7]
+>     d3    = 12
+>     x3    = 40
+>     nums3 = pGen s3 k3 x3 d3 (mkStdGen (seed + 1))  -- Offset seed prevents identical streams
+>     m3    = line $ map (\p -> note en p :+: rest en) nums3
+>     m3o   = m3 :=: transpose 12 (rest en :+: m3)
